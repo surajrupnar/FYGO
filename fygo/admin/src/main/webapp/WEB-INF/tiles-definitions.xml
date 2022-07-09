@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="fygo-basic-full-template"
+		template="/WEB-INF/template/fygo-basic-full-template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/common/footer.jsp" />
+	</definition>
+	
+	
+		<!-- Left Panel tiles definition -->
+	<definition name="fygo-left-panel-template"
+		template="/WEB-INF/template/fygo-left-panel-template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/common/footer.jsp" />
+	</definition>
+	
+	
+	
+	
+	<!-- About Us tiles definition extends from fygo-basic-full-template -->
+	<definition name="aboutUs"
+		extends="fygo-basic-full-template">
+		<put-attribute name="content"
+			value="/WEB-INF/webpages/aboutUs.jsp" />
+	</definition>
+	
+	
+	<!-- CSR Registration tiles definition extends from fygo-basic-full-template -->
+	<definition name="csr-demographic-info"
+		extends="fygo-basic-full-template">
+		<put-attribute name="content"
+			value="/WEB-INF/webpages/csr-demographic-info.jsp" />
+	</definition>
+	
+	
+<!-- 	<definition name="product"
+		extends="fygo-left-panel-template">
+		<put-attribute name="content"
+			value="/WEB-INF/webpages/product.jsp" />
+		<put-attribute name="leftpanel" value="/WEB-INF/common/left-panel.jsp"/>
+	</definition> -->
+	
+	<definition name="home"
+		extends="fygo-left-panel-template">
+		<put-attribute name="content"
+			value="/WEB-INF/webpages/home.jsp" />
+		<put-attribute name="leftpanel" value="/WEB-INF/common/left-panel.jsp"/>
+	</definition>	
+	
+</tiles-definitions>
